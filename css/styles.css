@@ -1,0 +1,110 @@
+:root{
+    --blue:#2E86AB;
+    --yellow-dorado:#FFD700;
+    --green-emerald:#00A388;
+    --gray:#ECECEC;
+}
+/* GENERAL */
+*{
+    font-family: 'Wix Madefor Text', sans-serif;
+    margin: 0; 
+    padding: 0;
+
+    box-sizing: border-box;
+    transition: all .2s linear;
+    /* Remove styles useless */
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+    /* Color del sombreado al seleccionar */
+*::selection{
+    background: var(--yellow-dorado);
+    color: #333;
+}
+*,*:before,*:after{
+    box-sizing: inherit; /*PARA EL BOX MODEL*/
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden; /*Evitar desbordamiento*/    
+}
+
+
+
+/* BARRA SCROLL FORMAT */
+html::-webkit-scrollbar{
+    width: .4rem;
+}
+html::-webkit-scrollbar-track{
+    background: var(--green-emerald);
+}
+html::-webkit-scrollbar-thumb{
+    background: var(--yellow-dorado);
+}
+
+
+
+/* GLOBALES */
+body{
+    background: #111;
+}
+/* UTILIDADES */
+
+/* HEADER */
+header{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 35rem;
+    background: #1a1a1a;
+    top:0;
+    left: 0;
+    z-index: 999;
+    color: #fff;
+}
+header .user__img{
+    height: 18rem;
+    width: 18rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: .8rem solid var(--green-emerald);
+}
+header .user__name{
+    font-size: 3.5rem;
+}
+header .user__post{
+    font-size: 2rem;
+}
+header .navbar{
+    width: 100%;
+}
+header .navbar__list{
+    list-style: none;
+    padding: 2rem 0;
+}
+header .navbar__link{
+    display: block;
+    text-align: center;
+    font-size: 2.1rem;
+    color: var(--gray);
+    padding: 1rem;
+    margin: 1.2rem 5rem;
+    border-radius: 2rem;
+    background: #000;
+    position: relative;
+    z-index: 0;
+    border: .1px solid #000;
+}
+
+header .navbar__link:hover{
+    background: var(--green-emerald);
+    border-color:  #fff;
+}
+/* HOME */
+
+/* FOOTER */
