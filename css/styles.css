@@ -71,6 +71,17 @@ section{
     background: var(--green-emerald);
 }
 
+.heading{
+    text-align: center;
+    margin: 0 6rem;
+    font-size: 4rem;
+    padding: 1.2rem;
+    border-bottom: .1rem solid var(--green-emerald);
+    color: var(--gray);
+}
+.heading span{
+    color: var(--green-emerald);
+}
 /* HEADER */
 header{
     position: fixed;
@@ -155,11 +166,8 @@ header .navbar__link:hover{
 .home h3{
     font-size: 2.5rem;
 }
-.home h1{
-    font-size: 5rem;
-}
-.home h1 span{
-    color: var(--green-emerald);
+.home .heading{
+    font-size: 5.2rem;
 }
 
 .home p{
@@ -172,10 +180,61 @@ header .navbar__link:hover{
 }
 
 
+/* ABOUT */
+.about{
+    margin-top: 3rem;
+    color: #fff;
+}
+.about .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+}
+.about__info{
+    flex: 1 1 48rem;
+    padding: 2rem 1rem;
+    padding-left: 6rem;
+}
 
+.about__info h3{
+    font-size: 2rem;
+    color: var(--green-emerald);
+    padding: 1rem 0;
+    font-weight: normal;
+}
 
+.about__info h3 span{
+    color: #fff;
+    padding: 0 .2rem;
+    font-weight: bold;
+}
+.about__info .caja_btn{
+    margin-top: 2rem;
+}
+.about .row .counter{
+    display: flex;
+    flex: 1 1 50rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.about .row .counter .box{
+    width: 20rem;
+    background: #222;
+    text-align: center;
+    padding: 2rem;
+    margin: 1.5rem ;
+}
+.about .row .counter .box span{
+    font-size: 4rem;
+    color: var(--green-emerald);
+}
 
-
+.about .row .counter .box h3{
+    font-size: 2rem;
+    color: #fff;
+}
 
 
 
@@ -240,8 +299,12 @@ header .navbar__link:hover{
     header{
         width: 100vw;
     }
-
-
+    .heading{
+        margin: 0 3rem;
+    }
+    .about .row .counter .box{
+        width: 100%;
+    }
 
 }
 
