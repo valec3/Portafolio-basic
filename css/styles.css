@@ -236,13 +236,60 @@ header .navbar__link:hover{
     color: #fff;
 }
 
+/* Educacion */
 
+.education{
+    color: var(--gray);
+}
 
+.education .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 4rem 0 2rem 4rem;
+}
+.education .box-container .box{
+    width: 25rem;
+    height: 26rem;
+    padding: 2rem;
+    position: relative;
+    border-left: .1rem solid var(--gray);
+}
+.education .box-container .box span{
+    display: block;
+    font-size: 1.3rem;
+    background: #222;
+    border-radius: 5rem;
+    padding: .6rem 2rem;
+    margin: 1rem auto ;
+    width: 50%;
+    font-weight: bold;
+    color: var(--green-emerald);
+    text-align: center;
+}
 
-
-
-
-
+.education .box-container .box h3{
+    font-size: 2.5rem;
+    margin-top: 1rem;
+}
+.education .box-container .box p{
+    font-size: 1.5rem;
+    line-height: 1.4;
+    padding: .2rem;
+}
+.education .box-container .box i{
+    position: absolute;
+    font-size: 2rem;
+    top: -1.5rem;
+    left: -2.5rem;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    line-height: 5rem;
+    background: var(--green-emerald);
+    text-align: center;
+}
 
 
 
@@ -306,6 +353,10 @@ header .navbar__link:hover{
         width: 100%;
     }
 
+
+    .education .box-container .box{
+        width: 100%;
+    }
 }
 
 
