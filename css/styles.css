@@ -27,6 +27,7 @@
     box-sizing: inherit; /*PARA EL BOX MODEL*/
 }
 html{
+    scroll-behavior: smooth;
     font-size: 62.5%;
     overflow-x: hidden; /*Evitar desbordamiento*/    
 }
@@ -51,6 +52,7 @@ body{
     background: #111;
     height: 1000rem;
     padding-left: 30rem;
+    color: #ECECEC;
 }
 
 section{
@@ -60,6 +62,7 @@ section{
 /* UTILIDADES */
 
 .btn{
+    text-align: center;
     padding: 1rem 3rem;
     background: #333;
     color: #fff;
@@ -73,7 +76,7 @@ section{
 
 .heading{
     text-align: center;
-    margin: 0 6rem;
+    margin: 5px 7rem;
     font-size: 4rem;
     padding: 1.2rem;
     border-bottom: .1rem solid var(--green-emerald);
@@ -81,6 +84,20 @@ section{
 }
 .heading span{
     color: var(--green-emerald);
+}
+
+
+.top{
+    position: fixed;
+    bottom: 7.5rem;
+    right: 2rem;
+    z-index: 9999;
+    /* display: none; */
+}
+.top i{
+    color: var(--green-emerald);
+    font-size: 3.6rem;
+    transform: rotate(-45deg);
 }
 /* HEADER */
 header{
@@ -185,6 +202,9 @@ header .navbar__link:hover{
     margin-top: 3rem;
     color: #fff;
 }
+.about .heading{
+    margin-top: 3rem;
+}
 .about .row{
     display: flex;
     align-items: center;
@@ -201,7 +221,8 @@ header .navbar__link:hover{
 .about__info h3{
     font-size: 2rem;
     color: var(--green-emerald);
-    padding: 1rem 0;
+    padding: 1rem .5rem ;
+    margin: 1rem 0;
     font-weight: normal;
 }
 
@@ -316,6 +337,70 @@ header .navbar__link:hover{
 .portfolio .box-container .box:hover img{
     transform: scale(1.2);
 }
+
+/* CONTACTO-SECCION */
+
+.contact .row{
+    display:  flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact .row .content{
+    flex: 1 1 30rem;
+    padding: 0 8rem;
+}
+.contact .row .formulario{
+    flex: 1 1 45rem;
+    margin: 2rem;
+    padding: 2rem;
+    margin-bottom: 4rem;
+}
+.contact .row .formulario .box{
+    margin: .9rem   0;
+    padding: 1rem 1.4rem;
+    font-size: 1.8rem;
+    background: #333;
+    color: var(--gray);
+    text-transform: none;
+    width: 100%;
+}
+.contact .row .formulario .box::placeholder{
+    text-transform: capitalize;
+}
+
+.contact .row .formulario .message{
+    height: 14rem;
+    resize: none;
+}
+   
+.contact .row .content .title{
+    text-transform: uppercase;
+    color: #fff;
+    padding-bottom: 3rem;
+    font-size: 3rem;
+}
+.contact .row .content .info h3{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    padding: 1rem;
+    color: #eee;
+    font-weight: normal;
+}
+.contact .row .content .info h3 i{
+    padding-right: 2rem;
+    color: var(--green-emerald);
+}
+
+
+
+
+
+
+
+
 /* FOOTER */
 
 
@@ -359,9 +444,6 @@ header .navbar__link:hover{
     html{
         font-size: 50%;
     }
-
-
-
 }
 
 
@@ -384,6 +466,10 @@ header .navbar__link:hover{
     .portfolio .box-container .box{
         display: block;
         width: 90%;
+    }
+
+    .contact .row .formulario {
+        margin: 3rem 0;
     }
 }
 
